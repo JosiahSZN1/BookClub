@@ -1,0 +1,17 @@
+package com.codingdojo.bookclub.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.BindingResult;
+
+import com.codingdojo.bookclub.models.Book;
+import com.codingdojo.bookclub.repositories.BookRepository;
+
+public class BookService {
+
+	@Autowired
+	private BookRepository bookRepository;
+	
+	public Book createBook(Book book, BindingResult result) {
+		return bookRepository.save(book);
+	}
+}

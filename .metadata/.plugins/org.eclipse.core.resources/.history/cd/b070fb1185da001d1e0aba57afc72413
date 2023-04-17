@@ -1,0 +1,8 @@
+package com.codingdojo.bookclub.services;
+
+import com.codingdojo.bookclub.repositories.UserRepository;
+
+public class UserService {
+
+	private final UserRepository userRepository;
+}

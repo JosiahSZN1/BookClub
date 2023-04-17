@@ -1,0 +1,9 @@
+package com.codingdojo.bookclub.controllers;
+@Controller
+public class UsersController {
+
+	@GetMapping("/")
+	public String index() {
+		return "index.jsp";
+	}
+}

@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+/Users/levijosiahmariano/Desktop/SoftwareDevelopment/CodingDojo/java/spring/full_spring/assignments/BookClub/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+1812549493.index
+2945120705.index
+1509654377.index
+4049335007.index
+3667648171.index
+3436859612.index
+970178935.index

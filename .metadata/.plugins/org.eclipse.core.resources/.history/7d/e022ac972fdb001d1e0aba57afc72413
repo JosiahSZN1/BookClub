@@ -1,0 +1,23 @@
+package com.codingdojo.bookclub.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.codingdojo.bookclub.services.BookService;
+
+@Controller
+@RequestMapping("/books")
+public class BooksController {
+	
+	@Autowired
+	private BookService bookService;
+
+	@GetMapping("")
+	public String rIndex(Model model) {
+		model.addAttribute("allBooks", bookService.allBooks());
+		return "dashboard.jsp";
+	}
+}
